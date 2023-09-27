@@ -14,8 +14,8 @@ function Header() {
       <>barra</>
       {
         darkMode 
-        ? <SunIcon onClick={change} className="h-8 w-8 text-emerald-300 hover:text-emerald-500"/> 
-        : <MoonIcon onClick={change} className="h-8 w-8" />
+        ? <button><SunIcon onClick={change} className="h-8 w-8 text-emerald-300 hover:text-emerald-500"/> </button>
+        : <button><MoonIcon onClick={change} className="h-8 w-8" /></button>
       }
     </div>
   )
