@@ -49,3 +49,23 @@ body {
 .rounded-4xl {
   border-radius: 30px;
 }
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #565656;
+  color: #999999;
+  font-size: 1.25rem/* 20px */;
+  line-height: 1.75rem/* 28px */;
+  transition: ease-in-out 200ms;
+}
+
+.social-media-link:hover {
+  border-radius: 30%;
+  border-color: #28e98c;
+  color: #28e98c;
+}

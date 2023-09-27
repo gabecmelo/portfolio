@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import SocialMedias from "./SocialMedias"
+import HireMe from "./HireMe"
 
 function ProfileCard() {
   return (
@@ -11,15 +12,14 @@ function ProfileCard() {
         <p className="text-right text-sm">Desenvolvedor <br /> Front-End</p>
       </div>
       <img className="max-w-xxs mb-12 rounded-3xl " src="https://a.imagem.app/oBg7fT.png" alt="Gabriel Melo" />
-      <div className="flex flex-col gap-2 mb-6">
-        <h2 className="text-2xl font-light">contatogabemelo@gmail.com</h2>
-        <h2 className="text-2xl font-light">Maringá, PR</h2>
-      </div>
-      <span className="text-default-gray font-light">
+      <h2 className="text-xl font-light mb-2 ">contatogabemelo@gmail.com</h2>
+      <h2 className="text-2xl font-light mb-6">Maringá, PR</h2>
+      <span className="text-default-gray font-light mb-6">
         {'Inspiração do Design: '}
         <Link className="credit-link" target="_blank" to="https://wpriverthemes.com/HTML/drake/home6.html#home">Drake</Link>
       </span>
       <SocialMedias />
+      <HireMe />
     </div>
   )
 }
