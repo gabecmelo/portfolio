@@ -77,3 +77,23 @@ body {
   border-color: #28e98c;
   color: #28e98c;
 }
+
+.bg-green-primary {
+  background-color: #28e98c;
+}
+
+.text-green-primary {
+  color: #28e98c;
+}
+
+.hover-hire {
+  cursor: pointer;
+  border: 2px #28e98c solid;
+  transition: 200ms ease-in-out;
+}
+
+.hover-hire:hover {
+  border-color: #28e98c;
+  background-color: black;
+  color: #28e98c;
+}
