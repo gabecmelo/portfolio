@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.bottom-46 {
+  bottom: 188px;
+}
+
+.left-62 {
+  left: 248px;
+}
+
 @layer utilities {
   .credit-link {
     @apply text-blue-400
   }
 
   .credit-link::after {
-    @apply content-[''] absolute w-0 h-0.5 left-64 bottom-20 bg-blue-400 duration-200
+    @apply content-[''] absolute w-0 h-0.5 left-62 bottom-46 bg-blue-400 duration-200
   }
 
   .credit-link:hover::after {
@@ -65,7 +73,7 @@ body {
 }
 
 .social-media-link:hover {
-  border-radius: 30%;
+  border-radius: 25%;
   border-color: #28e98c;
   color: #28e98c;
 }
