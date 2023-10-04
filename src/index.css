@@ -2,25 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.bottom-46 {
-  bottom: 188px;
+:root {
+  --primary_color_green: rgb(40, 233, 140);
+  --primary_color_yellow: rgb(250, 204, 21);
+  --primary_color_orange: rgb(251, 146, 60);
+  --primary_color_blue: rgb(20, 197, 253);
+  --primary_color_gray: rgb(209, 213, 219);
+  --primary_color_dark_blue: rgb(19, 56, 243);
+  --primary_color_red: rgb(243, 19, 19);
+  --primary_color_pink: rgb(249 168 212);
+}
+
+.bottom-68 {
+  bottom: 218px;
 }
 
 .left-62 {
-  left: 248px;
+  left: 246px;
 }
 
 @layer utilities {
   .credit-link {
-    @apply text-blue-400
+    @apply text-blue-400 duration-300
+  }
+
+  .credit-link:hover {
+    @apply max-lg:text-blue-950 max-lg:font-bold 
   }
 
   .credit-link::after {
-    @apply content-[''] absolute w-0 h-0.5 left-62 bottom-46 bg-blue-400 duration-200
+    @apply lg:content-[''] absolute w-0 h-0.5 left-62 bottom-68 bg-blue-400 duration-200 
   }
 
   .credit-link:hover::after {
-    @apply w-10
+    @apply w-11 
   }
 }
 
@@ -74,26 +89,50 @@ body {
 
 .social-media-link:hover {
   border-radius: 25%;
-  border-color: #28e98c;
-  color: #28e98c;
+  border-color: var(--primary_color_green);
+  color: var(--primary_color_green);
 }
 
 .bg-green-primary {
-  background-color: #28e98c;
+  background-color: var(--primary_color_green);
+}
+
+.bg-blue-primary {
+  background-color: var(--primary_color_blue);
+}
+
+.bg-dark-blue-primary {
+  background-color: var(--primary_color_dark_blue);
+}
+
+.bg-red-primary {
+  background-color: var(--primary_color_red);
+}
+
+.bg-default {
+  background-color: rgb(40, 233, 140);
 }
 
 .text-green-primary {
-  color: #28e98c;
+  color: var(--primary_color_green);
 }
 
 .hover-hire {
   cursor: pointer;
-  border: 2px #28e98c solid;
+  border: 2px var(--primary_color_green) solid;
   transition: 200ms ease-in-out;
 }
 
 .hover-hire:hover {
-  border-color: #28e98c;
+  border-color: var(--primary_color_green);
   background-color: black;
-  color: #28e98c;
+  color: var(--primary_color_green);
+}
+
+.bg-gray-default {
+  background-color: #191919;
+}
+
+.bg-transparent {
+  background-color: rgba(97, 97, 97, 0.367);
 }
