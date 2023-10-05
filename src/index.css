@@ -136,3 +136,39 @@ body {
 .bg-transparent {
   background-color: rgba(97, 97, 97, 0.367);
 }
+
+.selector {
+  display: block;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  transition: box-shadow 300ms;
+  box-shadow: 
+    0 0 0 4px #191919,
+    0 0 0 5px transparent;
+}
+
+.selector:hover {
+  position: relative;
+  box-shadow: 
+    0 0 0 4px #191919, 
+    0 0 0 5px white; 
+}
+
+.active {
+  position: relative;
+  box-shadow: 
+    0 0 0 4px #191919,
+    0 0 0 5px white; 
+}
+
+.center-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
