@@ -1,14 +1,16 @@
+import { useState } from "react"
 import GlobalSettings from "../components/GlobalSettings/GlobalSettings"
 import ProfileCard from "../components/ProfileCard"
-import Settings from "../components/Trades/Settings"
+import SettingsButton from "../components/Trades/SettingsButton"
 
 function Home() {
+  const [showSettings, setShowSettings] = useState(false);
 
   return (
-    <div className="text-white">
+    <div className="text-white z-10">
     <ProfileCard />
-    <Settings />
-    <GlobalSettings />
+    <SettingsButton setShowSettings={setShowSettings} showSettings={showSettings} />
+    <GlobalSettings setShowSettings={setShowSettings} showSettings={showSettings} />
     </div>
   )
 }

@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { CgClose } from 'react-icons/cg'
 
-function GlobalSettings() {
+type SettingsProps = {
+  setShowSettings: (setting: boolean) => void,
+  showSettings: boolean
+}
+
+function GlobalSettings({ setShowSettings, showSettings }: SettingsProps) {
 
   const [activeColor, setActiveColor] = useState('')
 
@@ -18,9 +23,19 @@ function GlobalSettings() {
   }
 
   return (
-    <div className="bg-transparent w-full h-full top-0 left-0 z-10"> {/* absolute */}
-      <div className="flex flex-col justify-center z-20 absolute h-full w-4/6 right-0 top-0 text-black dark:text-white bg-gray-default overflow-x-hidden max-xl:w-7/12 max-lg:w-1/2 max-md:w-full max-lg:items-center transition-all">
-        <button className="absolute right-5 top-6"><CgClose size={20} /></button>
+    <>
+      <div onClick={() => setShowSettings(!showSettings)}
+        style={{ pointerEvents: showSettings ? 'auto' : 'none' }}
+        className={`bg-transparent w-full h-full top-0 left-0 z-10 absolute ${showSettings ? 'fade-in' : 'fade-out'}`} />
+
+      <div className={`flex flex-col justify-center z-20 absolute h-full w-4/6 right-0 top-0 text-black dark:text-white
+       bg-gray-default overflow-x-hidden max-xl:w-7/12 max-lg:w-1/2 max-md:w-full max-lg:items-center transition-all 
+       ${showSettings ? 'slide-in-from-right fade-in' : 'slide-out-from-right hidden'}`}>
+
+        <button onClick={() => setShowSettings(!showSettings)} className={`absolute right-5 top-6 ${showSettings ? 'flex' : 'hidden'}`}>
+          <CgClose size={20} />
+        </button>
+        
         <div className="ml-32 flex flex-col justify-between max-lg:-ml-7 max-lg:items-center max-lg:w-1/2">
           <h1 className=" text-start text-3xl font-light mb-20">Configuração</h1>
           <p className="text-start text-sm mb-12">COLORS</p>
@@ -76,7 +91,7 @@ function GlobalSettings() {
           </a>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

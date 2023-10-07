@@ -181,3 +181,69 @@ body {
 .animate-spin {
   animation: spin 3s linear infinite;
 }
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: 0;
+  }
+}
+
+.slide-in-from-right {
+  opacity: 0;
+  transform: translateX(100%);
+  display: flex;
+  animation: slideInFromRight 0.4s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-out-from-right {
+  opacity: 1;
+  transform: translateX(100%);
+  display: flex;
+  animation: slideOutFromRight 0.4s ease-in-out forwards;
+}
+
+@keyframes slideOutFromRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
