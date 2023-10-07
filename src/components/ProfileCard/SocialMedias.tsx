@@ -4,10 +4,10 @@ import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub, AiOutlineInstagram } fr
 function SocialMedias() {
   return (
     <ul className="flex gap-2 mb-8 justify-center">
-      <li><Link className="social-media-link" to=""><AiOutlineTwitter/></Link></li>
-      <li><Link className="social-media-link" to=""><AiFillLinkedin /></Link></li>
-      <li><Link className="social-media-link" to=""><AiFillGithub /></Link></li>
-      <li><Link className="social-media-link" to=""><AiOutlineInstagram /></Link></li>
+      <li><Link className="social-media-link" target="_blank" to="https://twitter.com/Gabezzk"><AiOutlineTwitter/></Link></li>
+      <li><Link className="social-media-link" target="_blank" to="https://www.linkedin.com/in/gabrielc-melo/"><AiFillLinkedin /></Link></li>
+      <li><Link className="social-media-link" target="_blank" to="https://github.com/gabecmelo"><AiFillGithub /></Link></li>
+      <li><Link className="social-media-link" target="_blank" to="https://www.instagram.com/https.gabbee/"><AiOutlineInstagram /></Link></li>
     </ul>
   )
 }
