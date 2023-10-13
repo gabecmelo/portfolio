@@ -11,6 +11,7 @@
   --primary_color_dark_blue: rgb(19, 56, 243);
   --primary_color_red: rgb(243, 19, 19);
   --primary_color_pink: rgb(249 168 212);
+  --primary-color-border-gray: #565656;
 }
 
 .bottom-68 {
@@ -27,15 +28,15 @@
   }
 
   .credit-link:hover {
-    @apply max-lg:text-blue-950 max-lg:font-bold 
+    @apply max-lg:text-blue-500 max-lg:font-bold
   }
 
   .credit-link::after {
-    @apply lg:content-[''] absolute w-0 h-0.5 left-62 bottom-68 bg-blue-400 duration-200 
+    @apply lg:content-[''] absolute w-0 h-0.5 left-62 bottom-68 bg-blue-400 duration-200
   }
 
   .credit-link:hover::after {
-    @apply w-11 
+    @apply w-11
   }
 }
 
@@ -48,7 +49,7 @@ body {
 }
 
 .default-gray {
-  border-color: #565656;
+  border-color: var(--primary-color-border-gray);
 }
 
 .text-default-gray {
@@ -80,10 +81,14 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid #565656;
+  border: 2px solid var(--primary-color-border-gray);
   color: #999999;
-  font-size: 1.25rem/* 20px */;
-  line-height: 1.75rem/* 28px */;
+  font-size: 1.25rem
+    /* 20px */
+  ;
+  line-height: 1.75rem
+    /* 28px */
+  ;
   transition: ease-in-out 200ms;
 }
 
@@ -143,23 +148,23 @@ body {
   width: 2rem;
   height: 2rem;
   transition: box-shadow 300ms;
-  box-shadow: 
+  box-shadow:
     0 0 0 4px #191919,
     0 0 0 5px transparent;
 }
 
 .selector:hover {
   position: relative;
-  box-shadow: 
-    0 0 0 4px #191919, 
-    0 0 0 5px white; 
+  box-shadow:
+    0 0 0 4px #191919,
+    0 0 0 5px white;
 }
 
 .active {
   position: relative;
-  box-shadow: 
+  box-shadow:
     0 0 0 4px #191919,
-    0 0 0 5px white; 
+    0 0 0 5px white;
 }
 
 .center-dot {
@@ -178,6 +183,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 .animate-spin {
   animation: spin 3s linear infinite;
 }
@@ -191,6 +197,7 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
     display: flex;
@@ -205,6 +212,7 @@ body {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     display: none;
@@ -224,6 +232,7 @@ body {
     opacity: 0;
     transform: translateX(100%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -242,8 +251,24 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+
   100% {
     opacity: 0;
     transform: translateX(100%);
   }
+}
+
+.menu-button {
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  border: 1px solid var(--primary-color-border-gray);
+  padding: 1rem;
+  border-radius: 50%;
+  transition: 200ms ease-in-out;
+}
+
+.menu-button:hover {
+  border-color: var(--primary_color_green);
+  color: var(--primary_color_green);
 }
