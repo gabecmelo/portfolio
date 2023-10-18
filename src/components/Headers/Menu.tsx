@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom'
 type MenuProps = {
   showMenu: boolean
   setShowMenu: (setting: boolean) => void
+  local: string
+  setLocal: (setting: string) => void
 }
 
-function Menu({ setShowMenu, showMenu }: MenuProps) {
+function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
 
   return (
     <>
@@ -22,11 +24,11 @@ function Menu({ setShowMenu, showMenu }: MenuProps) {
       ${showMenu ? 'slide-in-from-right fade-in' : 'slide-out-from-right hidden'}`}>
         <h1 className='text-xl'>Menu</h1>
         <div className='flex flex-col gap-6'>
-          <Link to="#home" className='flex gap-3'><AiOutlineHome size={20} /> Início</Link>
-          <Link to="#about" className='flex gap-3'><GoPerson size={20} /> Sobre</Link>
-          <Link to="#resume" className='flex gap-3'><BiBriefcase size={20} /> Currículo</Link>
-          <Link to="#skills" className='flex gap-3'><AiFillBuild size={20} /> Habilidades</Link>
-          <Link to="#projects" className='flex gap-3'><PiSquaresFour size={20} /> Projetos</Link>
+        <Link to="#home" onClick={() => setLocal('home')} className={`home-icon ${local === 'home' ? 'text-green-primary' : ''}`}><AiOutlineHome size={20} /> Início</Link>
+        <Link to="#about" onClick={() => setLocal('about')} className={`home-icon ${local === 'about' ? 'text-green-primary' : ''}`}><GoPerson size={20} /> Sobre</Link>
+          <Link to="#resume" onClick={() => setLocal('resume')} className={`home-icon ${local === 'resume' ? 'text-green-primary' : ''}`}><BiBriefcase size={20} /> Currículo</Link>
+          <Link to="#skills" onClick={() => setLocal('skills')} className={`home-icon ${local === 'skills' ? 'text-green-primary' : ''}`}><AiFillBuild size={20} /> Habilidades</Link>
+          <Link to="#projects" onClick={() => setLocal('projects')} className={`home-icon ${local === 'projects' ? 'text-green-primary' : ''}`}><PiSquaresFour size={20} /> Projetos</Link>
         </div>
         <div>
           social
