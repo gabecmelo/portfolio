@@ -5,6 +5,7 @@ import SettingsButton from "../components/Headers/SettingsButton"
 import MenuButton from "../components/Headers/MenuButton";
 import Menu from "../components/Headers/Menu";
 import SideBar from "../components/SideBar/SideBar";
+import MainContent from "../components/MainContent/MainContent";
 
 function Home() {
   const [showSettings, setShowSettings] = useState(false);
@@ -20,6 +21,7 @@ function Home() {
     <MenuButton setShowMenu={setShowMenu} showMenu={showMenu} />
     <Menu local={local} setLocal={setLocal} setShowMenu={setShowMenu} showMenu={showMenu}/>
     <SideBar local={local} setLocal={setLocal} mouse={mouse} setMouse={setMouse}/>
+    <MainContent />
     </div>
   )
 }

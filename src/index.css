@@ -14,6 +14,11 @@
   --primary-color-border-gray: #565656;
 }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .bottom-68 {
   bottom: 218px;
 }
@@ -314,4 +319,8 @@ body {
 
 .top-46 {
   top: 11.7rem;
+}
+
+.leading-plus {
+  line-height: 80px;
 }
