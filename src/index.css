@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;700&family=Lora:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --primary_color_green: rgb(40, 233, 140);
@@ -323,4 +326,13 @@ body {
 
 .leading-plus {
   line-height: 80px;
+}
+
+.font-inter-light {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
 }
