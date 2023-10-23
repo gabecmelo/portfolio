@@ -267,7 +267,7 @@ body {
 }
 
 .menu-button {
-  position: fixed;
+  position: absolute;
   top: 4rem;
   right: 4rem;
   border: 1px solid var(--primary-color-border-gray);
