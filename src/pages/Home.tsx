@@ -15,13 +15,13 @@ function Home() {
 
   return (
     <div className="text-white z-10">
-    <ProfileCard />
-    <SettingsButton setShowSettings={setShowSettings} showSettings={showSettings} />
-    <GlobalSettings setShowSettings={setShowSettings} showSettings={showSettings} />
-    <MenuButton setShowMenu={setShowMenu} showMenu={showMenu} />
-    <Menu local={local} setLocal={setLocal} setShowMenu={setShowMenu} showMenu={showMenu}/>
-    <SideBar local={local} setLocal={setLocal} mouse={mouse} setMouse={setMouse}/>
-    <MainContent />
+      <ProfileCard />
+      <SettingsButton setShowSettings={setShowSettings} showSettings={showSettings} />
+      <GlobalSettings setShowSettings={setShowSettings} showSettings={showSettings} />
+      <MenuButton setShowMenu={setShowMenu} showMenu={showMenu} />
+      <Menu local={local} setLocal={setLocal} setShowMenu={setShowMenu} showMenu={showMenu} />
+      <SideBar local={local} setLocal={setLocal} mouse={mouse} setMouse={setMouse} />
+      <MainContent />
     </div>
   )
 }

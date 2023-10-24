@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 
 function Introduction() {
   return (
-    <div className='flex flex-col items-start w-1/2 absolute left-1/3 ml-24 gap-14 top-16'>
+    <>
       <div className='flex border rounded-full px-7 py-2 items-center gap-2 default-gray font-light text-xs font-inter-light'>
         <AiOutlineHome size={15} /> INTRODUÇÃO
       </div>
-      <div className='text-7xl text-start font-light leading-plus font-inter'>
+      <div className='text-7xl text-start font-light leading-plus font-inter max-xl:text-6xl'>
         <p>Um Olá de <span className='text-green-primary'>Gabriel, <br /></span>Desenvolvedor Web <br />Full-Stack</p>
       </div>
       <div className='text-left'>
@@ -16,7 +16,7 @@ function Introduction() {
           Desenvolvo aplicações Web com React, Angular e outras ferramentas.<br /> Além disso, utilizo Docker, SQL e também Node.js em projetos no Back-End.<br />Simples assim!
         </p>
         <Link
-          className='flex w-44 h-44 absolute right-52 bottom-44 justify-center items-center border rounded-full default-gray'
+          className='flex w-44 h-44 absolute right-52 bottom-44 justify-center items-center border rounded-full default-gray max-xl:right-12 max-md:bottom-56'
           to="#projects">
           < HiArrowDown size={40} />
         </Link>
@@ -38,7 +38,7 @@ function Introduction() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

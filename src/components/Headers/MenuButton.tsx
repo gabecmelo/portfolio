@@ -10,7 +10,7 @@ function MenuButton({showMenu, setShowMenu}: MenuButtonProps) {
   return (
     <button 
     onClick={() => setShowMenu(!showMenu)}
-    className='menu-button'>
+    className='menu-button max-md:fixed max-lg:top-8 max-lg:right-4'>
       <FaGripLines size={23} />
     </button>
   )
