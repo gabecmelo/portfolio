@@ -9,11 +9,11 @@ function Introduction() {
         <AiOutlineHome size={15} /> INTRODUÇÃO
       </div>
       <div className='text-7xl text-start font-light leading-plus font-inter'>
-        <p>Um Olá de <span className='text-green-primary'>Gabriel, <br /></span>Desenvolvedor Web <br />Front-End</p>
+        <p>Um Olá de <span className='text-green-primary'>Gabriel, <br /></span>Desenvolvedor Web <br />Full-Stack</p>
       </div>
       <div className='text-left'>
         <p className='text-default-gray font-inter'>
-          Desenvolvo aplicações Web com React e outras ferramentas. <br />Simples assim!
+          Desenvolvo aplicações Web com React, Angular e outras ferramentas.<br /> Além disso, utilizo Docker, SQL e também Node.js em projetos no Back-End.<br />Simples assim!
         </p>
         <Link
           className='flex w-44 h-44 absolute right-52 bottom-44 justify-center items-center border rounded-full default-gray'
@@ -42,4 +42,4 @@ function Introduction() {
   )
 }
 
-export default Introduction
+export default Introduction;

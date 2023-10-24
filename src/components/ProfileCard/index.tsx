@@ -10,7 +10,7 @@ function ProfileCard() {
                     text-black dark:text-white max-lg:z-0 max-lg:max-w-xs max-lg:p-8">
       <div className="flex justify-between mb-8 ">
         <h1 className="text-5xl font-semibold">Gabe</h1>
-        <p className="text-right text-sm">Desenvolvedor <br /> Front-End</p>
+        <p className="text-right text-sm">Desenvolvedor <br /> Full-Stack</p>
       </div>
       <img className="max-w-xxs mb-12 rounded-3xl " src="https://a.imagem.app/oBg7fT.png" alt="Gabriel Melo" />
       <h2 className="text-xl font-light mb-2 ">contatogabemelo@gmail.com</h2>
