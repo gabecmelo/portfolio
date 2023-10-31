@@ -1,0 +1,1 @@
+export const BUBBLE_CLASSNAME = 'flex border rounded-full px-7 py-2 items-center gap-2 default-gray font-light text-xs font-inter-light'
