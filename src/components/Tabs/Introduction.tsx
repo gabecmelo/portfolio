@@ -10,7 +10,7 @@ function Introduction() {
         <AiOutlineHome size={15} /> INTRODUÇÃO
       </div>
       <div className='text-7xl text-start font-light leading-plus font-inter max-xl:text-6xl'>
-        <p>Um Olá de <span className='text-green-primary'>Gabriel, <br /></span>Desenvolvedor Web <br />Full-Stack</p>
+        <p>Um Olá de <span className='text-green-primary'>Gabriel</span>,<br />Desenvolvedor Web <br />Full-Stack</p>
       </div>
       <div className='text-left'>
         <p className='text-default-gray font-inter'>

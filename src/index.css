@@ -337,3 +337,12 @@ body {
 .font-inter {
   font-family: 'Inter', sans-serif;
 }
+
+.skill {
+  margin-bottom: 1rem;
+  transition: 200ms ease;
+}
+
+.skill:hover {
+  border-color: var(--primary-color-green);
+}
