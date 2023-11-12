@@ -60,6 +60,10 @@ body {
   border-color: var(--primary-color-border-gray);
 }
 
+.border-green {
+  border-color: var(--primary-color-green);
+}
+
 .text-default-gray {
   color: #999999
 }
@@ -344,5 +348,5 @@ body {
 }
 
 .skill:hover {
-  border-color: var(--primary-color-green);
+  border-color: var(--primary_color_green);
 }
