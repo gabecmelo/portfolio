@@ -13,7 +13,7 @@ type SideBarProps = {
 
 function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
   return (
-    <div className="flex flex-col gap-6 fixed right-18 top-80 rounded-full border default-gray p-4 text-default-gray max-lg:hidden">
+    <div className="z-10 flex bg-black flex-col gap-6 fixed right-18 top-80 rounded-full border default-gray p-4 text-default-gray max-lg:hidden">
       <Link
         to="#home"
         onMouseOver={() => setMouse('home')}

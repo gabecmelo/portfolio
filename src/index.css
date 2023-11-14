@@ -350,3 +350,9 @@ body {
 .skill:hover {
   border-color: var(--primary_color_green);
 }
+
+.slow {
+  border-bottom: 1px solid white;
+  transition: 200ms ease-in-out;
+}
+

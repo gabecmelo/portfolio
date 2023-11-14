@@ -1,5 +1,6 @@
 import About from '../Tabs/About';
 import Introduction from '../Tabs/Introduction';
+import Projects from '../Tabs/Projects';
 import Resume from '../Tabs/Resume';
 import Skills from '../Tabs/Skills';
 
@@ -16,6 +17,7 @@ function MainContent() {
       <About />
       <Resume />
       <Skills />
+      <Projects />
     </div>
   );
 }

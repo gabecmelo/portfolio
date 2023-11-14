@@ -15,7 +15,7 @@ function Skills() {
       <div className={BUBBLE_CLASSNAME}>
         <AiFillBuild size={15} /> HABILIDADES
       </div>
-      <div className=" flex flex-col gap-16 text-left max-sm:gap-8">
+      <div className="flex flex-col gap-16 text-left max-sm:gap-8">
         <h1 className="text-5xl font-inter-light">
           Minhas principais
           <span className="text-green-primary"> habilidades</span>
