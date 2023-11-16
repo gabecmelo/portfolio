@@ -351,6 +351,11 @@ body {
   border-color: var(--primary_color_green);
 }
 
+.no-slow {
+  border-bottom: 1px solid black;
+  transition: 200ms ease-in-out;
+}
+
 .slow {
   border-bottom: 1px solid white;
   transition: 200ms ease-in-out;

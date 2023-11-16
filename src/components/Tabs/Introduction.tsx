@@ -5,7 +5,7 @@ import { BUBBLE_CLASSNAME } from '../../assets/utils';
 
 function Introduction() {
   return (
-    <>
+    <div className="flex flex-col text-start">
       <div className={BUBBLE_CLASSNAME}>
         <AiOutlineHome size={15} /> INTRODUÇÃO
       </div>
@@ -54,7 +54,7 @@ function Introduction() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

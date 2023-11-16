@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Resume() {
   return (
-    <>
+    <div className="flex flex-col gap-5 text-start">
       <div className={BUBBLE_CLASSNAME}>
         <BiBriefcase size={15} /> CURRICULO
       </div>
@@ -34,7 +34,7 @@ function Resume() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

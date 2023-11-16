@@ -11,7 +11,7 @@ import SkillCard from '../SkillCard/SkillCard';
 
 function Skills() {
   return (
-    <>
+    <div className="flex flex-col gap-5 text-start">
       <div className={BUBBLE_CLASSNAME}>
         <AiFillBuild size={15} /> HABILIDADES
       </div>
@@ -29,7 +29,7 @@ function Skills() {
           <SkillCard icon={<BiLogoTailwindCss size={80} />} name="Tailwind" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
