@@ -6,17 +6,6 @@ type MenuButtonProps = {
   setShowMenu: (setting: boolean) => void;
 };
 
-const buttonVariants = {
-  hover: {
-    scale: 1.1,
-    transition: {
-      repeat: Infinity,
-      repeatType: 'reverse',
-      duration: 0.3,
-    },
-  },
-};
-
 function MenuButton({ showMenu, setShowMenu }: MenuButtonProps) {
   return (
     <motion.div
@@ -25,7 +14,16 @@ function MenuButton({ showMenu, setShowMenu }: MenuButtonProps) {
       transition={{ duration: 1.5 }}
     >
       <motion.button
-        variants={buttonVariants}
+        variants={{
+          hover: {
+            scale: 1.1,
+            transition: {
+              repeat: Infinity,
+              repeatType: 'reverse',
+              duration: 0.3,
+            },
+          },
+        }}
         whileHover="hover"
         onClick={() => setShowMenu(!showMenu)}
         className="menu-button max-md:fixed max-lg:top-8 max-lg:right-4"
