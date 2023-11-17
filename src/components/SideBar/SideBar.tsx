@@ -3,6 +3,7 @@ import { GoPerson } from 'react-icons/go';
 import { BiBriefcase } from 'react-icons/bi';
 import { PiSquaresFour } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 type SideBarProps = {
   local: string;
@@ -13,7 +14,12 @@ type SideBarProps = {
 
 function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
   return (
-    <div className="z-10 flex bg-black flex-col gap-6 fixed right-18 top-80 rounded-full border default-gray p-4 text-default-gray max-lg:hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="z-10 flex bg-black flex-col gap-6 fixed right-18 top-80 rounded-full border default-gray p-4 text-default-gray max-lg:hidden"
+    >
       <Link
         to="#home"
         onMouseOver={() => setMouse('home')}
@@ -80,7 +86,7 @@ function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
       {mouse === 'projects' && (
         <span className="absolute right-12 top-46 tooltip">Projetos</span>
       )}
-    </div>
+    </motion.div>
   );
 }
 

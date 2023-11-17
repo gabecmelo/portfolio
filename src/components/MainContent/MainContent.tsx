@@ -1,8 +1,9 @@
-import About from '../Tabs/About';
-import Introduction from '../Tabs/Introduction';
-import Projects from '../Tabs/Projects';
-import Resume from '../Tabs/Resume';
-import Skills from '../Tabs/Skills';
+import About from './Tabs/About';
+import Reveal from './Tabs/Reveal';
+import Introduction from './Tabs/Introduction';
+import Projects from './Tabs/Projects';
+import Resume from './Tabs/Resume';
+import Skills from './Tabs/Skills';
 
 function MainContent() {
   return (
@@ -13,11 +14,11 @@ function MainContent() {
       top-16 max-xl:w-1/2 max-xl:left-1/3 max-xl:ml-20
       max-md:left-0 max-md:top-36 max-md:w-full max-md:ml-0"
     >
-      <Introduction />
-      <About />
-      <Resume />
-      <Skills />
-      <Projects />
+      <Reveal>{<Introduction />}</Reveal>
+      <Reveal>{<About />}</Reveal>
+      <Reveal>{<Resume />}</Reveal>
+      <Reveal>{<Skills />}</Reveal>
+      <Reveal>{<Projects />}</Reveal>
     </div>
   );
 }

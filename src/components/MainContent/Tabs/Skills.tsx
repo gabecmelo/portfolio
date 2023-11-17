@@ -6,8 +6,9 @@ import {
   BiLogoDocker,
   BiLogoTailwindCss,
 } from 'react-icons/bi';
-import { BUBBLE_CLASSNAME } from '../../assets/utils';
-import SkillCard from '../SkillCard/SkillCard';
+import { BUBBLE_CLASSNAME } from '../../../assets/utils';
+import SkillCard from '../../SkillCard/SkillCard';
+import Reveal from './Reveal';
 
 function Skills() {
   return (
@@ -16,10 +17,12 @@ function Skills() {
         <AiFillBuild size={15} /> HABILIDADES
       </div>
       <div className="flex flex-col gap-16 text-left max-sm:gap-8">
-        <h1 className="text-5xl font-inter-light">
-          Minhas principais
-          <span className="text-green-primary"> habilidades</span>
-        </h1>
+        <Reveal>
+          <h1 className="text-5xl font-inter-light">
+            Minhas principais
+            <span className="text-green-primary"> habilidades</span>
+          </h1>
+        </Reveal>
         <div className="flex flex-wrap gap-5 text-center ml-auto">
           <SkillCard icon={<BiLogoReact size={80} />} name="React" />
           <SkillCard icon={<BiLogoAngular size={80} />} name="Angular" />

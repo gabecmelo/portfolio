@@ -3,6 +3,7 @@ import { GoPerson } from 'react-icons/go';
 import { BiBriefcase } from 'react-icons/bi';
 import { PiSquaresFour } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
+import { CgClose } from 'react-icons/cg';
 
 type MenuProps = {
   showMenu: boolean;
@@ -78,6 +79,12 @@ function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
           </Link>
         </div>
         <div>social</div>
+        <button
+          onClick={() => setShowMenu(!showMenu)}
+          className={`absolute right-5 top-6 ${showMenu ? 'flex' : 'hidden'}`}
+        >
+          <CgClose size={20} />
+        </button>
       </div>
     </>
   );

@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
 import SocialMedias from './SocialMedias';
 import HireMe from './HireMe';
+import { motion } from 'framer-motion';
 
 function ProfileCard() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
       className="fixed left-5 top-17 border-1 default-gray
                     rounded-4xl p-14 flex flex-col max-w-m z-0
                     text-black dark:text-white max-lg:z-0 max-lg:max-w-xs max-lg:p-8
@@ -36,7 +40,7 @@ function ProfileCard() {
       </span>
       <SocialMedias />
       <HireMe />
-    </div>
+    </motion.div>
   );
 }
 

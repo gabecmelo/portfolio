@@ -277,7 +277,7 @@ body {
   border: 1px solid var(--primary-color-border-gray);
   padding: 1rem;
   border-radius: 50%;
-  transition: 200ms ease-in-out;
+  transition: 300ms;
 }
 
 .menu-button:hover {
