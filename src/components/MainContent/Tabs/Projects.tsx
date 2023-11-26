@@ -5,7 +5,7 @@ import Reveal from './Reveal';
 
 function Projects() {
   return (
-    <div className="flex flex-col gap-5 text-start">
+    <div className="flex flex-col gap-5 text-start" id="projects">
       <div className={BUBBLE_CLASSNAME}>
         <PiSquaresFour size={15} /> Projetos
       </div>

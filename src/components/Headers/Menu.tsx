@@ -2,8 +2,9 @@ import { AiOutlineHome, AiFillBuild } from 'react-icons/ai';
 import { GoPerson } from 'react-icons/go';
 import { BiBriefcase } from 'react-icons/bi';
 import { PiSquaresFour } from 'react-icons/pi';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { CgClose } from 'react-icons/cg';
+import MenuSocialMedias from './TinyComponents/MenuSocialMedias';
 
 type MenuProps = {
   showMenu: boolean;
@@ -31,9 +32,10 @@ function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
       }`}
       >
         <h1 className="text-xl">Menu</h1>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 mb-10">
           <Link
             to="#home"
+            smooth
             onClick={() => setLocal('home')}
             className={`home-icon ${
               local === 'home' ? 'text-green-primary' : ''
@@ -43,6 +45,7 @@ function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
           </Link>
           <Link
             to="#about"
+            smooth
             onClick={() => setLocal('about')}
             className={`home-icon ${
               local === 'about' ? 'text-green-primary' : ''
@@ -52,6 +55,7 @@ function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
           </Link>
           <Link
             to="#resume"
+            smooth
             onClick={() => setLocal('resume')}
             className={`home-icon ${
               local === 'resume' ? 'text-green-primary' : ''
@@ -61,6 +65,7 @@ function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
           </Link>
           <Link
             to="#skills"
+            smooth
             onClick={() => setLocal('skills')}
             className={`home-icon ${
               local === 'skills' ? 'text-green-primary' : ''
@@ -70,6 +75,7 @@ function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
           </Link>
           <Link
             to="#projects"
+            smooth
             onClick={() => setLocal('projects')}
             className={`home-icon ${
               local === 'projects' ? 'text-green-primary' : ''
@@ -78,7 +84,10 @@ function Menu({ setShowMenu, showMenu, setLocal, local }: MenuProps) {
             <PiSquaresFour size={20} /> Projetos
           </Link>
         </div>
-        <div>social</div>
+        <div className="flex flex-col gap-4">
+          <h1>Social</h1>
+          <MenuSocialMedias />
+        </div>
         <button
           onClick={() => setShowMenu(!showMenu)}
           className={`absolute right-5 top-6 ${showMenu ? 'flex' : 'hidden'}`}

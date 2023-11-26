@@ -18,10 +18,11 @@ function Project({ projectUrl, imgUrl, name, tecnologies }: ProjectProps) {
         <Link to={projectUrl} target="_blank">
           <img className="rounded-3xl" src={imgUrl} alt={name} />
           <ul className="flex gap-3 relative bottom-16 left-6">
-            {tecnologies.map((tecnologie) => (
+            {tecnologies.map((tecnologie, index) => (
               <li
-                className={`px-4 py-2 rounded-full font-inter-light transition-all ease-in-out duration-300
-                ${slow ? 'bg-zinc-800 text-white' : 'bg-white text-black'}`}
+                key={index}
+                className={`px-4 py-2 rounded-full font-inter-light 
+                ${slow ? 'project-tag-slow' : 'project-tag-no-slow'}`}
               >
                 {tecnologie}
               </li>

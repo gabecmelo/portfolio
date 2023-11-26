@@ -14,7 +14,7 @@
   --primary_color_dark_blue: rgb(19, 56, 243);
   --primary_color_red: rgb(243, 19, 19);
   --primary_color_pink: rgb(249 168 212);
-  --primary-color-border-gray: #565656;
+  --primary_color_border_gray: #565656;
 }
 
 body {
@@ -57,11 +57,11 @@ body {
 }
 
 .default-gray {
-  border-color: var(--primary-color-border-gray);
+  border-color: var(--primary_color_border_gray);
 }
 
 .border-green {
-  border-color: var(--primary-color-green);
+  border-color: var(--primary_color_green);
 }
 
 .text-default-gray {
@@ -93,7 +93,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid var(--primary-color-border-gray);
+  border: 2px solid var(--primary_color_border_gray);
   color: #999999;
   font-size: 1.25rem
     /* 20px */
@@ -274,7 +274,7 @@ body {
   position: absolute;
   top: 4rem;
   right: 4rem;
-  border: 1px solid var(--primary-color-border-gray);
+  border: 1px solid var(--primary_color_border_gray);
   padding: 1rem;
   border-radius: 50%;
   transition: 300ms;
@@ -361,3 +361,18 @@ body {
   transition: 200ms ease-in-out;
 }
 
+.project-tag-slow {
+  background-color: rgb(39, 39, 42);
+  color: rgb(255, 255, 255) ;
+  transition: 200ms ease-in-out;
+}
+
+.project-tag-no-slow {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0) ;
+  transition: 200ms ease-in-out;
+}
+
+.media-link:hover {
+  color: var(--primary_color_green)
+}

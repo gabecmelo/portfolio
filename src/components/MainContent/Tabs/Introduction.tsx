@@ -1,6 +1,6 @@
 import { AiOutlineHome } from 'react-icons/ai';
 import { HiArrowDown } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { BUBBLE_CLASSNAME } from '../../../assets/utils';
 import Reveal from './Reveal';
 
@@ -13,7 +13,8 @@ function Introduction() {
       <Reveal>
         <div className="text-7xl text-start font-light leading-plus font-inter max-xl:text-6xl max-sm:text-5xl">
           <p>
-            Um Olá de <span className="text-green-primary">Gabriel</span>,<br />
+            Um Olá de <span className="text-green-primary">Gabriel</span>,
+            <br />
             Desenvolvedor Web <br />
             Full-Stack
           </p>
@@ -30,18 +31,17 @@ function Introduction() {
           </p>
         </Reveal>
         <Link
-          className="flex w-44 h-44 absolute right-52
+          className="flex w-44 h-44 ml-56 mt-16
           justify-center items-center border
-          rounded-full default-gray max-xl:right-12 
-          max-sm:top-96 max-sm:mt-52 
-          max-md:bottom-56max-md:top-96 max-md:mt-20"
+          rounded-full default-gray"
           to="#projects"
+          smooth
         >
           <HiArrowDown size={40} />
         </Link>
         <Reveal>
           <>
-            <div className="mt-64 font-inter-light flex gap-32">
+            <div className="mt-24 font-inter-light flex gap-32">
               <h2 className="text-green-primary text-7xl">1+</h2>
               <h2 className="text-green-primary text-7xl">20+</h2>
             </div>

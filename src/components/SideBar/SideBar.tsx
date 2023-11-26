@@ -2,7 +2,7 @@ import { AiOutlineHome, AiFillBuild } from 'react-icons/ai';
 import { GoPerson } from 'react-icons/go';
 import { BiBriefcase } from 'react-icons/bi';
 import { PiSquaresFour } from 'react-icons/pi';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 
 type SideBarProps = {
@@ -22,6 +22,7 @@ function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
     >
       <Link
         to="#home"
+        smooth
         onMouseOver={() => setMouse('home')}
         onMouseOut={() => setMouse('')}
         onClick={() => setLocal('home')}
@@ -34,6 +35,7 @@ function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
       )}
       <Link
         to="#about"
+        smooth
         onMouseOver={() => setMouse('about')}
         onMouseOut={() => setMouse('')}
         onClick={() => setLocal('about')}
@@ -46,6 +48,7 @@ function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
       )}
       <Link
         to="#resume"
+        smooth
         onMouseOver={() => setMouse('resume')}
         onMouseOut={() => setMouse('')}
         onClick={() => setLocal('resume')}
@@ -60,6 +63,7 @@ function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
       )}
       <Link
         to="#skills"
+        smooth
         onMouseOver={() => setMouse('skills')}
         onMouseOut={() => setMouse('')}
         onClick={() => setLocal('skills')}
@@ -74,6 +78,7 @@ function SideBar({ setLocal, local, mouse, setMouse }: SideBarProps) {
       )}
       <Link
         to="#projects"
+        smooth
         onMouseOver={() => setMouse('projects')}
         onMouseOut={() => setMouse('')}
         onClick={() => setLocal('projects')}
