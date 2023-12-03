@@ -5,7 +5,7 @@ import Reveal from './Reveal';
 
 function Resume() {
   return (
-    <div className="flex flex-col gap-5 text-start">
+    <div className="flex flex-col gap-5 text-start max-sm:w-screen">
       <div className={BUBBLE_CLASSNAME}>
         <BiBriefcase size={15} /> CURRICULO
       </div>

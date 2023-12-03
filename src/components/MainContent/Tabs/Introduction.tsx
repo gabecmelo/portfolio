@@ -33,7 +33,7 @@ function Introduction() {
         <Link
           className="flex w-44 h-44 ml-56 mt-16
           justify-center items-center border
-          rounded-full default-gray"
+          rounded-full default-gray max-sm:ml-32"
           to="#projects"
           smooth
         >

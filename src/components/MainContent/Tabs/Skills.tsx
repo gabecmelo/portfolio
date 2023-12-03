@@ -12,11 +12,11 @@ import Reveal from './Reveal';
 
 function Skills() {
   return (
-    <div className="flex flex-col gap-5 text-start" id="skills">
+    <div className="flex flex-col gap-5 text-start max-sm:w-96" id="skills">
       <div className={BUBBLE_CLASSNAME}>
         <AiFillBuild size={15} /> HABILIDADES
       </div>
-      <div className="flex flex-col gap-16 text-left max-sm:gap-8">
+      <div className="flex flex-col gap-16 text-left ">
         <Reveal>
           <h1 className="text-5xl font-inter-light">
             Minhas principais

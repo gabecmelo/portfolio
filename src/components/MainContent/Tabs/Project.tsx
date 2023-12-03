@@ -31,13 +31,13 @@ function Project({ projectUrl, imgUrl, name, tecnologies }: ProjectProps) {
         </Link>
       </Reveal>
       <Link className="relative bottom-10" to={projectUrl} target="_blank">
-        <p
-          className={`font-inter-light text-start mt-6 text-2xl w-max ${
+        <h1
+          className={`font-inter-light text-start mt-6 text-2xl w-max max-sm:text-lg ${
             slow ? 'slow' : 'no-slow'
           }`}
         >
           {name}
-        </p>
+        </h1>
       </Link>
     </div>
   );

@@ -4,7 +4,7 @@ import Reveal from './Reveal';
 
 function About() {
   return (
-    <div className="flex flex-col gap-5 text-start">
+    <div className="flex flex-col gap-5 text-start max-sm:w-screen">
       <div className={BUBBLE_CLASSNAME}>
         <GoPerson size={15} /> SOBRE
       </div>

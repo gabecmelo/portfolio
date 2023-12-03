@@ -12,8 +12,7 @@ function ProfileCard() {
       className="fixed left-5 top-17 border-1 default-gray
                     rounded-4xl p-14 flex flex-col max-w-m z-0
                     text-black dark:text-white max-lg:z-0 max-lg:max-w-xs max-lg:p-8
-                    max-md:relative max-md:max-w-lg
-                    max-sm:left-0"
+                    max-md:relative max-md:max-w-lg max-sm:w-80"
     >
       <div className="flex justify-between mb-8 ">
         <h1 className="text-5xl font-semibold">Gabe</h1>
