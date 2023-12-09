@@ -1,6 +1,5 @@
 import { BiBriefcase } from 'react-icons/bi';
 import { BUBBLE_CLASSNAME } from '../../../assets/utils';
-import { Link } from 'react-router-dom';
 import Reveal from './Reveal';
 import Certificates from './TinyComponents/Certificates';
 
