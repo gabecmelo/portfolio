@@ -32,8 +32,8 @@ function Projects() {
       <Project
         projectUrl="https://github.com/gabecmelo/store-manager"
         imgUrl="https://uploaddeimagens.com.br/images/004/681/029/full/Screenshot_from_2023-12-03_11-18-46.png?1701613147"
-        name="Store Manager - uma API RESTful para lojas e mercados!"
-        tecnologies={['JavaScript', 'Node.js', 'MySQL', 'Express', 'API']}
+        name="Store Manager - API RESTful para lojas"
+        tecnologies={['JavaScript', 'Node.js', 'MySQL']}
       />
     </div>
   );

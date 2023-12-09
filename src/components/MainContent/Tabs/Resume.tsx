@@ -2,6 +2,7 @@ import { BiBriefcase } from 'react-icons/bi';
 import { BUBBLE_CLASSNAME } from '../../../assets/utils';
 import { Link } from 'react-router-dom';
 import Reveal from './Reveal';
+import Certificates from './TinyComponents/Certificates';
 
 function Resume() {
   return (
@@ -15,7 +16,7 @@ function Resume() {
         </h1>
       </Reveal>
 
-      <div className="text-start ml-20">
+      <div className="text-start ml-20 max-md:ml-0">
         <Reveal>
           <div className="mb-20">
             <p className="text-default-gray mb-4">2022 - Presente</p>
@@ -27,19 +28,7 @@ function Resume() {
           </div>
         </Reveal>
         <Reveal>
-          <div>
-            <p className="text-default-gray mb-4">2023 - 2024</p>
-            <div className="flex flex-col gap-6">
-              <p className="text-2xl font-inter-light">
-                Certificado de Desenvolvimento Full-Stack on{' '}
-                <span className="text-green-primary underline">
-                  <Link target="_blank" to="https://www.betrybe.com/">
-                    Trybe
-                  </Link>
-                </span>
-              </p>
-            </div>
-          </div>
+          <Certificates />
         </Reveal>
       </div>
     </div>
