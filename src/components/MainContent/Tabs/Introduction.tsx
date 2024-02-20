@@ -24,8 +24,7 @@ function Introduction() {
         <Reveal>
           <p className="text-default-gray font-inter">
             Desenvolvo aplicações Web com React, Angular e outras ferramentas.
-            <br /> Além disso, utilizo Docker, SQL e também Node.js em projetos
-            no Back-End.
+            <br /> Além disso, utilizo Docker, SQL e também Node.js em projetos no Back-End.
             <br />
             Simples assim!
           </p>
@@ -37,13 +36,7 @@ function Introduction() {
           to="#projects"
           smooth
         >
-          <div className="animate-spi n">
-            <img
-              className="scale-90"
-              src="https://i.ibb.co/fqCnKkg/Portfolio-Projects-image-fundo-transparente.png"
-              alt=""
-            />
-          </div>
+          <div className="animate-spi n"></div>
           <HiArrowDown className="absolute" size={40} />
         </Link>
 
