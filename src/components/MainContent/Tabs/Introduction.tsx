@@ -37,8 +37,16 @@ function Introduction() {
           to="#projects"
           smooth
         >
-          <HiArrowDown size={40} />
+          <div className="animate-spi n">
+            <img
+              className="scale-90"
+              src="https://i.ibb.co/fqCnKkg/Portfolio-Projects-image-fundo-transparente.png"
+              alt=""
+            />
+          </div>
+          <HiArrowDown className="absolute" size={40} />
         </Link>
+
         <Reveal>
           <>
             <div className="mt-24 font-inter-light flex gap-32">
